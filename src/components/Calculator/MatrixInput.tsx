@@ -6,7 +6,7 @@ export function MatrixInput({ size, values, onChange }: { size: number, values: 
             {Array.from({ length: size * size }).map((_, index) => (
                 <Input
                     key={index}
-                    type="number"
+                    type="text"
                     value={values[index]} 
                     onChange={(e) => onChange(index, e.target.value)}
                     className="w-16 h-16 text-center"
